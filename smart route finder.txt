@@ -8,6 +8,38 @@ Destination
 
 👉 App finds shortest path using Dijkstra’s Algorithm
 
+DSA Concept Used
+Graph + Dijkstra Algorithm
+Nodes = locations
+Edges = roads with distance
+Goal = shortest path
+
+Used in:
+
+Google Maps
+Uber/Ola routing
+Network routing (packets)
+
+
+route-finder/
+│
+├── backend/
+│   ├── dsa/
+│   │   └── Graph.js
+│   ├── controllers/
+│   │   └── routeController.js
+│   ├── routes/
+│   │   └── routeRoutes.js
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── RouteForm.vue
+│   │   │   └── RouteResult.vue
+│   │   ├── App.vue
+│   │   └── main.js
+
 
 
 
