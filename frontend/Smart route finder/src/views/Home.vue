@@ -14,9 +14,9 @@
 import { ref } from "vue";
 import { getRoute } from "../api/routeService";
 
-import RouteForm from "../components/RouteForm.vue";
-import RouteResult from "../components/RouteResult.vue";
-import GraphView from "../components/GraphView.vue";
+import RouteForm from "../Components/RouteForm.vue";
+import RouteResult from "../Components/RouteResult.vue";
+import GraphView from "../Components/GraphView.vue";
 
 const result = ref(null);
 
