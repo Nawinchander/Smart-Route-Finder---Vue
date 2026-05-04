@@ -42,4 +42,26 @@ route-finder/
 
 
 
+frontend/
+│
+├── src/
+│   ├── api/
+│   │   └── routeService.js
+│   │
+│   ├── components/
+│   │   ├── RouteForm.vue
+│   │   ├── RouteResult.vue
+│   │   └── GraphView.vue
+│   │
+│   ├── views/
+│   │   └── Home.vue
+│   │
+│   ├── router/
+│   │   └── index.js
+│   │
+│   ├── App.vue
+│   └── main.js
+│
+└── package.json
+
 

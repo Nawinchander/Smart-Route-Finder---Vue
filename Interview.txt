@@ -1,0 +1,20 @@
+Interview-Level Points
+❓ Why separate API layer?
+
+👉 Cleaner architecture, scalable, testable
+
+❓ Why component split?
+
+👉 Reusability + maintainability
+
+❓ Where is DSA used in frontend?
+
+👉 Not directly — frontend visualizes results
+👉 Backend handles algorithm (correct separation)
+
+❓ How to improve?
+Add loading state
+Add error handling
+Use Pinia store
+Add map visualization (Leaflet / D3)
+
