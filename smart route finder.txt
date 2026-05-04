@@ -1,0 +1,13 @@
+Smart Route Finder (Vue + Graph DSA)
+💡 Real-life idea
+
+A mini Google Maps–like system where a user selects:
+
+Start location
+Destination
+
+👉 App finds shortest path using Dijkstra’s Algorithm
+
+
+
+
