@@ -1,11 +1,12 @@
-const express = require("express");
-const cors = require("cors");
-const routeRoutes = require("./routes/routeRoutes");
+const http = require("http");
+const app = require("./app");
+const initSocket = require("./websocket/socket");
 
-const app = express();
+const server = http.createServer(app);
 
-app.use(cors());
-app.use("/route", routeRoutes);
+// attach socket
+initSocket(server);
 
-app.listen(5000, () => console.log("Server running"));
-
+server.listen(5000, () => {
+  console.log("Server + WebSocket running on 5000");
+});
