@@ -1,4 +1,6 @@
-<script setup></script>
+
+
+<!-- <script setup></script>
 
 <!-- <template>
   <h1>You did it!</h1>
@@ -14,4 +16,4 @@
 <template>
   <router-view />
 </template>
-
+ -->
