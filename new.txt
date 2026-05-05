@@ -1,0 +1,68 @@
+route-finder/
+│
+├── backend/
+│   ├── dsa/
+│   │   └── Graph.js
+│   ├── controllers/
+│   │   └── routeController.js
+│   ├── routes/
+│   │   └── routeRoutes.js
+│   ├── websocket/
+│   │   └── socket.js
+│   ├── tests/
+│   │   └── route.test.js
+│   ├── app.js
+│   └── server.js
+│
+├── frontend/
+│   ├── src/
+│   │   ├── api/
+│   │   │   └── routeService.js
+│   │   ├── components/
+│   │   │   ├── RouteForm.vue
+│   │   │   ├── RouteResult.vue
+│   │   │   └── LiveUpdates.vue
+│   │   ├── tests/
+│   │   │   └── RouteForm.test.js
+│   │   ├── App.vue
+│   │   └── main.js
+
+
+
+INTERVIEW INSIGHTS (IMPORTANT)
+❓ Why WebSocket here?
+
+👉 Real-time updates without polling
+👉 Used in:
+
+Live maps
+Stock apps
+Ride tracking
+
+
+| REST             | WebSocket   |
+| ---------------- | ----------- |
+| Request-response | Full duplex |
+| Stateless        | Persistent  |
+| Polling needed   | Real-time   |
+
+
+
+❓ Why separate app.js and server.js?
+
+👉 Makes testing easier (no server start needed)
+
+❓ Why Supertest?
+
+👉 Simulates HTTP requests without running server
+
+❓ Why Vitest over Jest (frontend)?
+
+👉 Faster, native for Vite
+
+❓ Scaling problem?
+
+👉 WebSockets don’t scale easily → need:
+
+Redis Pub/Sub
+Load balancer sticky sessions
