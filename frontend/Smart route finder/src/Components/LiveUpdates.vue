@@ -2,9 +2,14 @@
   <div>
     <h3>Live Route Updates</h3>
     <p v-if="update">
+  {{ update.path.join(" → ") }}  
+  ({{ update.distance }})  
+  <span v-if="update.cached">⚡ Cached</span>
+</p>
+    <!-- <p v-if="update">
       {{ update.start }} → {{ update.end }} :
       {{ update.path.join(" → ") }} ({{ update.distance }})
-    </p>
+    </p> -->
   </div>
 </template>
 

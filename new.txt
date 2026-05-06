@@ -66,3 +66,72 @@ Ride tracking
 
 Redis Pub/Sub
 Load balancer sticky sessions
+
+
+backend/
+│
+├── cache/
+│   └── lruCache.js
+│
+├── dsa/
+│   └── Graph.js
+│
+├── queue/
+│   ├── routeQueue.js
+│   └── worker.js
+│
+├── websocket/
+│   └── socket.js
+│
+├── controllers/
+│   └── routeController.js
+│
+├── routes/
+│   └── routeRoutes.js
+│
+├── tests/
+│   └── route.test.js
+│
+├── app.js
+├── server.js
+
+
+Redis + Bull Queue
+Moves heavy computation off the request thread
+Simulates real systems like:
+Google Maps routing engine
+Uber dispatch system
+🧠 LRU Cache
+Avoid recomputing same routes
+Reduces latency from O(log n) → O(1) (cached)
+
+
+❓ Why use Bull Queue?
+
+👉 Moves heavy work to background
+👉 Prevents blocking main thread
+👉 Improves scalability
+
+❓ Why Redis?
+
+👉 Fast in-memory store
+👉 Used for:
+
+Queue
+Cache
+Pub/Sub
+❓ Why LRU Cache?
+
+👉 Keeps most recently used routes
+👉 Removes least used when full
+
+| Cache               | Queue            |
+| ------------------- | ---------------- |
+| Fast read           | Async processing |
+| Avoid recomputation | Handle load      |
+| In-memory           | Distributed      |
+
+
+
+
+
