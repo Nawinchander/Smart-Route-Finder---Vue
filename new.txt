@@ -132,6 +132,34 @@ Pub/Sub
 | In-memory           | Distributed      |
 
 
+❓ What happens under heavy traffic?
+
+👉 Without queue:
+
+Server blocks ❌
+
+👉 With queue:
+
+Requests buffered ✅
+❓ Scaling this system?
+Redis cluster
+Multiple workers
+Load balancer
+Cache invalidation strategy
+🔥 FINAL RESULT
+
+Now your project includes:
+
+✅ Graph DSA (Dijkstra)
+✅ Vue frontend
+✅ WebSockets (real-time)
+✅ Testing (Jest + Vitest)
+✅ Redis + Bull queue
+✅ LRU cache
+
+👉 This is strong enough for FAANG-level discussion
+
+
 
 
 
